@@ -32,13 +32,20 @@ a:hover {
 }
 body {
   margin: 0 auto;
-  width: 100%;
+  width: 100vw;
   min-width: 320px;
   min-height: 100vh;
 }
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+h3{
+  color: black;
+}
+
+h3:nth-child(1){
+  color: white;
 }
 .icon {
   font-size: 1.6rem;
@@ -63,7 +70,7 @@ h1 {
   width: 100%;
   padding: 10px 150px;
   background: #1b0115;
-  box-shadow: 0 1px 50px #880169a8;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.3) ;
   font-size: 18px;
   display: flex;
   align-items: center;
