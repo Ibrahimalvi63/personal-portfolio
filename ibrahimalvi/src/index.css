@@ -144,7 +144,7 @@ h1 {
   box-shadow: 1px 3px 10px black;
   border-radius: 10px;
   padding: 0 20px;
-  aspect-ratio: 4/3;
+  aspect-ratio: 16/9;
   filter: brightness(1.2);
 }
 
@@ -193,7 +193,7 @@ h1 {
   background: linear-gradient(to bottom, #0789f3, #020466);
   box-shadow: 1px 3px 10px black;
   border-radius: 10px;
-  aspect-ratio: 4/3;
+  aspect-ratio: 16/9;
   object-fit: cover;
   filter: brightness(1.5);
 }
@@ -228,6 +228,7 @@ h1 {
 .service-con .service-item {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
+  box-shadow: 1px 4px 8px rgba(0,0,0,0.3);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 6px;
   min-height: 200px;
@@ -290,6 +291,7 @@ h1 {
 .contact-sec {
   width: 100%;
   margin: 5rem auto;
+  text-align: left;
 }
 .contact-sec .container {
   width: 80%;
@@ -318,6 +320,7 @@ h1 {
   border-radius: 0.5rem;
   border: 0;
   outline: none;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* ✅ Media Queries for Responsive Design */
