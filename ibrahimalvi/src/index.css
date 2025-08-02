@@ -144,7 +144,7 @@ h1 {
   box-shadow: 1px 3px 10px black;
   border-radius: 10px;
   padding: 0 20px;
-  aspect-ratio: 16/9;
+  aspect-ratio: 9/16;
   filter: brightness(1.2);
 }
 
@@ -193,7 +193,7 @@ h1 {
   background: linear-gradient(to bottom, #0789f3, #020466);
   box-shadow: 1px 3px 10px black;
   border-radius: 10px;
-  aspect-ratio: 16/9;
+  aspect-ratio: 9/16;
   object-fit: cover;
   filter: brightness(1.5);
 }
@@ -209,6 +209,7 @@ h1 {
 .CircularProgressbar-text {
   dominant-baseline: middle;
   text-anchor: middle;
+  color: black;
 }
 
 /* -------- Services -------- */
