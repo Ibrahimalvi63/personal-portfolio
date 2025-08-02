@@ -2,20 +2,18 @@
   font-family: inter, poppins, "Times New Roman", Times, serif;
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
   color: #dae8fa;
   background: linear-gradient(0deg, #0c0009, #1a090d);
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
   scrollbar-width: none;
   -ms-overflow-style: none;
   scroll-behavior: smooth;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -33,20 +31,15 @@ a:hover {
   color: #a8ba9a;
   margin: 20px 0;
 }
-
 body {
   margin: 0 auto;
-  width: 100vw;
+  width: 100%;
   min-width: 320px;
   min-height: 100vh;
 }
-
 h1 {
-  font-size: 3em;
+  font-size: 3.2em;
   line-height: 1.1;
-}
-h3 {
-  font-size: 1.2rem;
 }
 .icon {
   font-size: 1.6rem;
@@ -65,9 +58,10 @@ h3 {
     color: #747bff;
   }
 }
-/* ............header..................... */
+
+/* -------- Header -------- */
 .header {
-  width: 100vw;
+  width: 100%;
   padding: 10px 150px;
   background: #1b0115;
   box-shadow: 0 1px 50px #880169a8;
@@ -115,23 +109,24 @@ h3 {
   height: 30px;
 }
 
-/* .....................Hero................. */
+/* -------- Hero -------- */
 .hero {
-  width: 100vw;
+  width: 100%;
   margin: 1rem auto;
   text-align: left;
   padding: 1rem;
 }
 .hero .hero-con {
   width: 80%;
-  height: fit-content;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .hero-con .hero-details {
-  width: 600px;
+  max-width: 600px;
+  width: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -139,25 +134,22 @@ h3 {
   gap: 10px;
 }
 .hero .hero-con .hero-img {
-  /* perspective: 1000px; */
-  /* border: 10px solid #dae8fa; */
   width: fit-content;
   border-radius: 10px;
 }
 .hero .hero-img img {
-  width: 320px;
-  height: 500px;
+  width: 100%;
+  max-width: 320px;
+  height: auto;
   background: linear-gradient(to bottom, #07f3d3, #026659);
   box-shadow: 1px 3px 10px black;
   border-radius: 10px;
   padding: 0 20px;
-  overflow: hidden;
   aspect-ratio: 4/3;
   filter: brightness(1.2);
-  /* transform: rotateY(140deg); */
 }
-/* .................contact button............... */
 
+/* -------- Contact Button -------- */
 .contact-btn {
   border: 0;
   outline: none;
@@ -177,9 +169,9 @@ h3 {
   box-shadow: inset 1px 1px 0 white;
 }
 
-/* ....................about............................. */
+/* -------- About -------- */
 .about-con {
-  width: 100vw;
+  width: 100%;
 }
 .about {
   display: flex;
@@ -187,29 +179,28 @@ h3 {
   justify-content: space-between;
   width: 80%;
   margin: 50px auto;
-  gap: 3rem;
+  flex-wrap: wrap;
 }
 .about .about-me {
-  width: 600px;
-  text-align: left;
+  max-width: 600px;
+  width: 100%;
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
   flex-direction: column;
-  gap: 1rem;
+  gap: 50px;
 }
 .about .about-img img {
-  width: 350px;
-  height: 500px;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
   background: linear-gradient(to bottom, #0789f3, #020466);
   box-shadow: 1px 3px 10px black;
   border-radius: 10px;
-  overflow: hidden;
   aspect-ratio: 4/3;
   object-fit: cover;
   filter: brightness(1.5);
 }
 
+/* -------- Skills -------- */
 .skill-grid {
   display: flex;
   align-items: center;
@@ -222,9 +213,9 @@ h3 {
   text-anchor: middle;
 }
 
-/* ..............service section..................... */
+/* -------- Services -------- */
 .services {
-  width: 100vw;
+  width: 100%;
   margin: 5rem auto;
   padding: 1rem;
 }
@@ -257,10 +248,9 @@ h3 {
   border: 1px solid orangered;
 }
 
-/* .....................project section........................ */
-
+/* -------- Projects -------- */
 .project-con {
-  width: 100vw;
+  width: 100%;
   max-height: 1000px;
   height: 500px;
   overflow-y: auto;
@@ -272,13 +262,11 @@ h3 {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
 }
-
 .project-item {
-  width: fit-content;
+  width: 100%;
   border-radius: 0.5rem;
   overflow: hidden;
   background-color: rgb(150, 4, 113);
-  margin: 0 auto;
   border: 1px solid white;
 }
 .project-item:hover {
@@ -287,8 +275,7 @@ h3 {
 }
 .project-item a {
   color: white;
-  margin: 0 auto;
-  width: fit-content;
+  display: block;
 }
 .project-item a img {
   width: 100%;
@@ -301,28 +288,27 @@ h3 {
   padding: 0.5rem;
 }
 
-/* ......................contact section................ */
+/* -------- Contact -------- */
 .contact-sec {
-  width: 100vw;
+  width: 100%;
   margin: 5rem auto;
 }
 .contact-sec .container {
   width: 80%;
   margin: 0 auto;
-  text-align: left;
 }
 .container .contact-con {
   width: 100%;
   margin: 2rem auto;
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 .contact-con .info-con {
   margin-top: 3rem;
 }
 .contact-con .message-con {
-  width: 60%;
+  width: 100%;
 }
 .message-con .input-con {
   width: 100%;
@@ -336,91 +322,59 @@ h3 {
   outline: none;
 }
 
-/* --------- Tablet (max-width: 1024px) --------- */
+/* ✅ Media Queries for Responsive Design */
 @media screen and (max-width: 1024px) {
   .header {
-    padding: 10px 50px;
+    padding: 10px 40px;
     flex-direction: column;
     gap: 10px;
   }
 
-  .hero .hero-con {
-    flex-direction: column;
-    gap: 30px;
-    text-align: center;
-  }
-
-  .about {
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-  }
-
-  .about .about-me,
-  .contact-con .message-con {
-    width: 100%;
-  }
-
+  .hero .hero-con,
+  .about,
   .contact-con {
     flex-direction: column;
-    gap: 30px;
+    align-items: center;
+  }
+
+  .hero-details,
+  .about-me,
+  .message-con {
+    text-align: center;
+    align-items: center;
+  }
+
+  .service-con,
+  .project-con .projects {
+    width: 90%;
   }
 }
 
-/* --------- Mobile (max-width: 768px) --------- */
 @media screen and (max-width: 768px) {
-  .body {
-    text-align: left;
-  }
-
-  .header {
-    padding: 10px 20px;
-    flex-direction: column;
-    align-items: flex-start;
+  h1 {
+    font-size: 2rem;
   }
 
   .header .nav {
-    font-size: 0.9rem;
+    flex-direction: column;
+    gap: 10px;
   }
 
-  .hero .hero-con {
+  .hero .hero-con,
+  .about,
+  .contact-con {
     width: 100%;
     padding: 0 1rem;
   }
 
-  .hero-con .hero-details {
-    width: 100%;
-    align-items: center;
-    text-align: center;
-  }
-
-  .hero .hero-img img {
-    width: 100%;
-    height: 500px;
-    padding: 0;
-  }
-
-  .about .about-me {
-    width: 100%;
-    padding: 0 1rem;
-    text-align: center;
-    align-items: center;
-  }
-
+  .hero .hero-img img,
   .about .about-img img {
+    padding: 0;
     width: 100%;
-    height: 500px;
   }
 
   .service-con {
-    width: 100%;
-    padding: 0 1rem;
     grid-template-columns: 1fr;
-  }
-
-  .projects {
-    width: 100%;
-    padding: 0 1rem;
   }
 
   .project-con .projects {
@@ -432,11 +386,7 @@ h3 {
     padding: 0 1rem;
   }
 
-  .input-con .input-field {
+  .input-field {
     padding: 0.8rem;
-  }
-
-  h1 {
-    font-size: 2rem;
   }
 }
