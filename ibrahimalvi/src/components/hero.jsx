@@ -9,9 +9,9 @@ function Hero() {
     <div className="hero" id="hero">
       <div className="hero-con">
         <div className="hero-details">
-          <h2 style={{ color: "lightblue" }}>{heroData && heroData.welcome}</h2>
+          <h2 style={{ color: "blue" }}>{heroData && heroData.welcome}</h2>
           <h1 style={{ color: "orangered" }}>{heroData && heroData.title}</h1>
-          <h3 style={{ color: "#e7d4e9e5" }}>
+          <h3 style={{ color: "darkgray" }}>
             {heroData && heroData.subTitle}
           </h3>
           <p className="paragraph">{heroData && heroData.description}</p>
@@ -20,16 +20,6 @@ function Hero() {
           </a>
         </div>
 
-        <div
-          style={{
-            height: "100px",
-            width: "100px",
-            borderRadius: "50%",
-            background: "rgba(255, 0,150)",
-            filter: "blur(90px)",
-            zIndex: "0",
-          }}
-        />
 
         <div className="hero-img">
           <img src={heroData && heroData.profileImage} />
