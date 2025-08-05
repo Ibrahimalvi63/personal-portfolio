@@ -7,14 +7,16 @@ function Services() {
 
   return (
     <div className="services">
-      <h2>Services</h2>
       <div className="service-con">
-        {serviceData.map((item) => (
-          <div key={item._id} className="service-item">
-            <h3 className="service-title">{item.title}</h3>
-            <p>{item.description}</p>
-          </div>
-        ))}
+        <h2>Services</h2>
+        <div className="service">
+          {serviceData.map((item) => (
+            <div key={item._id} className="service-item">
+              <h3 className="service-title">{item.title}</h3>
+              <p>{item.description}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

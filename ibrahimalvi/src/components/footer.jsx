@@ -17,13 +17,7 @@ function Footer() {
   const footerData = personalData?.footer || [];
 
   return (
-    <div
-      style={{
-        borderTop: "1px solid #d1c9c9ff",
-        width: "100vw",
-        padding: "1rem",
-      }}
-    >
+    <div className="footer">
       <div
         style={{
           textAlign: "left",

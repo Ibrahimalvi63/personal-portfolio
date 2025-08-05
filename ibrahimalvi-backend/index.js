@@ -29,7 +29,7 @@ app.get('/api/getData', async (req, res) => {
 
 app.get('/', async (req, res) => {
     try {
-        const messages = await message.find().sort({_id: -1});
+        const messages = await message.find().sort({ _id: -1 });
         res.render('home', { messages })
     } catch (err) {
         res.send('Error occured')

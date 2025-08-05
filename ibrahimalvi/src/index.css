@@ -4,7 +4,7 @@
   font-weight: 400;
   color-scheme: light dark;
   color: #dae8fa;
-  background: white;
+  background: linear-gradient(180deg, #3f0130, #1b0115);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -29,6 +29,7 @@ a:hover {
 }
 .paragraph {
   margin: 20px 0;
+  text-align: left;
 }
 body {
   margin: 0 auto;
@@ -40,13 +41,13 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
-h3{
-  color: black;
+h2 {
+  text-align: left;
+}
+h3 {
+  text-align: left;
 }
 
-h3:nth-child(1){
-  color: white;
-}
 .icon {
   font-size: 1.6rem;
   margin-right: 1rem;
@@ -67,23 +68,28 @@ h3:nth-child(1){
 
 /* -------- Header -------- */
 .header {
-  width: 100%;
-  padding: 10px 150px;
+  width: 100vw;
   background: #1b0115;
-  box-shadow: 0 1px 10px rgba(0,0,0,0.3) ;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
   font-size: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   position: sticky;
   top: 0;
   z-index: 1000;
+  text-align: left;
 }
-.header .nav {
+.header-con {
+  width: 80%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 30px;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0.8rem;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
 }
 .nav .link a {
   color: #dae8fa;
@@ -104,30 +110,21 @@ h3:nth-child(1){
   bottom: -3px;
   left: 0;
 }
-.header .logo-img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-.header .logo-img img {
-  width: 30px;
-  height: 30px;
-}
 
 /* -------- Hero -------- */
 .hero {
-  width: 100%;
+  width: 100vw;
   margin: 1rem auto;
-  text-align: left;
   padding: 1rem;
 }
 .hero .hero-con {
   width: 80%;
-  margin: 0 auto;
+  margin: 2rem auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 5rem;
+  text-align: left;
 }
 .hero-con .hero-details {
   max-width: 600px;
@@ -152,6 +149,7 @@ h3:nth-child(1){
   padding: 0 20px;
   aspect-ratio: 9/12;
   filter: brightness(1.2);
+  text-align: left;
 }
 
 /* -------- Contact Button -------- */
@@ -176,23 +174,20 @@ h3:nth-child(1){
 
 /* -------- About -------- */
 .about-con {
-  width: 100%;
+  width: 100vw;
 }
 .about {
+  width: 80%;
+  margin: 5rem auto;
+}
+.about-me {
+  width: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  width: 80%;
-  margin: 50px auto;
+  gap: 3rem;
 }
-.about .about-me {
-  max-width: 600px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-}
-.about .about-img img {
+.about-img img {
   width: 100%;
   max-width: 350px;
   height: auto;
@@ -203,8 +198,14 @@ h3:nth-child(1){
   object-fit: cover;
   filter: brightness(1.5);
 }
+.about-data {
+  width: 60%;
+}
 
 /* -------- Skills -------- */
+.skills {
+  margin: 2rem auto;
+}
 .skill-grid {
   display: flex;
   align-items: center;
@@ -220,22 +221,23 @@ h3:nth-child(1){
 
 /* -------- Services -------- */
 .services {
-  width: 100%;
-  margin: 5rem auto;
-  padding: 1rem;
+  width: 100vw;
 }
 .service-con {
+  width: 80%;
+  margin: 0 auto;
+}
+.service {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  width: 80%;
-  margin: 50px auto;
   gap: 50px;
   text-align: center;
+  margin-top: 2rem;
 }
-.service-con .service-item {
+.service .service-item {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
-  box-shadow: 1px 4px 8px rgba(0,0,0,0.3);
+  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.3);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 6px;
   min-height: 200px;
@@ -256,17 +258,21 @@ h3:nth-child(1){
 
 /* -------- Projects -------- */
 .project-con {
-  width: 100%;
+  width: 100vw;
   max-height: 1000px;
   height: 500px;
   overflow-y: auto;
-}
-.project-con .projects {
-  width: 80%;
   margin: 3rem auto;
+}
+.projects {
+  width: 80%;
+  margin: 0 auto;
+}
+.project {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
+  margin-top: 1rem;
 }
 .project-item {
   width: 100%;
@@ -296,26 +302,27 @@ h3:nth-child(1){
 
 /* -------- Contact -------- */
 .contact-sec {
-  width: 100%;
-  margin: 5rem auto;
+  width: 100vw;
+  margin: 1rem auto;
   text-align: left;
 }
 .contact-sec .container {
   width: 80%;
-  margin: 0 auto;
+  margin: 5rem auto;
 }
 .container .contact-con {
   width: 100%;
   margin: 2rem auto;
   display: flex;
-  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
   gap: 2rem;
 }
 .contact-con .info-con {
   margin-top: 3rem;
 }
 .contact-con .message-con {
-  width: 100%;
+  width: 70%;
 }
 .message-con .input-con {
   width: 100%;
@@ -330,71 +337,47 @@ h3:nth-child(1){
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
 }
 
+/* ......................footer section.................... */
+.footer {
+  border-top: 1px solid #d1c9c9ff;
+  width: 100vw;
+  padding: 1rem;
+  background-color: #0e010a;
+}
+
 /* ✅ Media Queries for Responsive Design */
 @media screen and (max-width: 1024px) {
-  .header {
-    padding: 10px 40px;
-    flex-direction: column;
-    gap: 10px;
+  .header-con {
+    gap: 2rem;
   }
-
-  .hero .hero-con,
-  .about,
-  .contact-con {
-    flex-direction: column;
-    align-items: center;
+  .nav {
+    width: 70%;
   }
-
-  .hero-details,
-  .about-me,
-  .message-con {
-    text-align: center;
-    align-items: center;
-  }
-
-  .service-con,
-  .project-con .projects {
-    width: 90%;
+  .about {
+    gap: 2rem;
   }
 }
 
 @media screen and (max-width: 768px) {
-  h1 {
-    font-size: 2rem;
-  }
-
-  .header .nav {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .hero .hero-con,
-  .about,
+  .header-con,
+  .hero-con,
   .contact-con {
-    width: 100%;
-    padding: 0 1rem;
+    flex-direction: column;
   }
-
-  .hero .hero-img img,
-  .about .about-img img {
-    padding: 0;
+  .nav {
     width: 100%;
   }
 
-  .service-con {
-    grid-template-columns: 1fr;
+  .about {
+    gap: 1rem;
   }
-
-  .project-con .projects {
-    grid-template-columns: 1fr;
+  .about-img {
+    display: none;
   }
-
-  .contact-sec .container {
+  .about-data {
     width: 100%;
-    padding: 0 1rem;
   }
-
-  .input-field {
-    padding: 0.8rem;
+  .contact-con .message-con {
+    width: 100%;
   }
 }

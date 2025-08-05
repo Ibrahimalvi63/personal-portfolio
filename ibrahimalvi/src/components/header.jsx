@@ -15,24 +15,24 @@ function Header({ activeSection }) {
 
   return (
     <div className="header">
-      <div className="logo-img">
-        {/* <img src="./name-logo.png" alt="Logo" /> */}
+      <div className="header-con">
         <h3>{userName ? userName : ""}</h3>
-      </div>
-      <div className="nav">
-        {navItems.map((item) => (
-          <div className="link" key={item.id}>
-            <a
-              href={`#${item.id}`}
-              className={activeSection === item.id ? "active" : ""}
-            >
-              {item.label}
-            </a>
-          </div>
-        ))}
-        <a href="#contacts" className="contact-btn">
-          Get in touch
-        </a>
+
+        <div className="nav">
+          {navItems.map((item) => (
+            <div className="link" key={item.id}>
+              <a
+                href={`#${item.id}`}
+                className={activeSection === item.id ? "active" : ""}
+              >
+                {item.label}
+              </a>
+            </div>
+          ))}
+          <a href="#contacts" className="contact-btn">
+            Hire Me
+          </a>
+        </div>
       </div>
     </div>
   );

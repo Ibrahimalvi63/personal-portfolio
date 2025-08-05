@@ -7,16 +7,18 @@ function Projects() {
   console.log(projectData);
   return (
     <div className="project-con">
-      <h2>Projects</h2>
       <div className="projects">
-        {projectData.map((item) => (
-          <div key={item._id} className="project-item">
-            <a href={item.link} target="_blank">
-              <img src={item.projectImage} />
-              <h3>{item.title}</h3>
-            </a>
-          </div>
-        ))}
+        <h2>Projects</h2>
+        <div className="project">
+          {projectData.map((item) => (
+            <div key={item._id} className="project-item">
+              <a href={item.link} target="_blank">
+                <img src={item.projectImage} />
+                <h3>{item.title}</h3>
+              </a>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

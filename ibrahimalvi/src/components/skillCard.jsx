@@ -23,13 +23,13 @@ function SkillCard({ skill, progress }) {
           value={percentage}
           text={`${percentage}%`}
           styles={buildStyles({
-            textColor: "black",
+            textColor: "orangered",
             trailColor: "#444",
             textSize: "16px",
             pathColor: "orangered",
           })}
         />
-        <p style={{ textAlign: "center", color: "black" }}>{skill}</p>
+        <p style={{ textAlign: "center", color: "#77C595" }}>{skill}</p>
       </div>
     </>
   );
