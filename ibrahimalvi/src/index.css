@@ -234,7 +234,7 @@ p {
 .service {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 50px;
+  gap: 4rem;
   text-align: center;
   margin-top: 2rem;
 }
@@ -244,7 +244,7 @@ p {
   box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.3);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 6px;
-  min-height: 200px;
+  height: auto;
   padding: 10px;
 }
 .service-title {
@@ -253,7 +253,6 @@ p {
 
 .service-item p {
   text-align: left;
-  padding: 10px;
   font-size: 18px;
 }
 .service-item:hover {
