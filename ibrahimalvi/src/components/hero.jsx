@@ -12,7 +12,7 @@ function Hero() {
           <h2 style={{ color: "#68ED79" }}>{heroData && heroData.welcome}</h2>
           <h1 style={{ color: "orangered" }}>{heroData && heroData.title}</h1>
           <h3 style={{ color: "#77C595" }}>{heroData && heroData.subTitle}</h3>
-          <p className="paragraph">{heroData && heroData.description}</p>
+          <p>{heroData && heroData.description}</p>
           <a href="#contacts" className="contact-btn">
             Hire Me
           </a>

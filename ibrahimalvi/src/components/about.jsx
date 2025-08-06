@@ -14,7 +14,7 @@ function About() {
           </div>
           <div className="about-data">
             <h2>{aboutData && aboutData.title}</h2>
-            <p className="paragraph">{aboutData && aboutData.bio}</p>
+            <p>{aboutData && aboutData.bio}</p>
           </div>
         </div>
         <div className="skills">
