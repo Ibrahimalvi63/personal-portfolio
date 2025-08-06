@@ -366,6 +366,9 @@ p {
   .about {
     gap: 2rem;
   }
+  .service{
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
   .contact-btn {
     padding: 0.2rem 0.4rem;
     font-size: 1rem;
