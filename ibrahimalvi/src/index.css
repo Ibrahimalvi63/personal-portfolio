@@ -202,6 +202,9 @@ p {
 .about-data {
   width: 60%;
 }
+.about-data p {
+  text-align: left;
+}
 
 /* -------- Skills -------- */
 .skills {
@@ -247,9 +250,11 @@ p {
 .service-title {
   margin-bottom: 2rem;
 }
+
 .service-item p {
   text-align: left;
-  padding: 0.8rem;
+  padding: 10px;
+  font-size: 18px;
 }
 .service-item:hover {
   transform: scale(1.01);
@@ -378,6 +383,9 @@ p {
   .service {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
+  .service-item p {
+    font-size: 16px;
+  }
   .contact-btn {
     padding: 0.2rem 0.4rem;
     font-size: 1rem;
@@ -430,6 +438,9 @@ p {
   .contact-btn {
     padding: 0.1rem 0.3rem;
     font-size: 0.9rem;
+  }
+  .service-item p {
+    font-size: 14px;
   }
 }
 
