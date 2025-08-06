@@ -40,12 +40,18 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  cursor: default;
 }
 h2 {
   text-align: left;
+  cursor: default;
 }
 h3 {
   text-align: left;
+  cursor: default;
+}
+p {
+  cursor: default;
 }
 
 .icon {
@@ -126,8 +132,7 @@ h3 {
   text-align: left;
 }
 .hero-con .hero-details {
-  max-width: 600px;
-  width: 100%;
+  width: 50%;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -215,7 +220,7 @@ h3 {
 .CircularProgressbar-text {
   dominant-baseline: middle;
   text-anchor: middle;
-  color: black;
+  cursor: default;
 }
 
 /* -------- Services -------- */
@@ -331,9 +336,12 @@ h3 {
   width: 100%;
   padding: 1rem;
   border-radius: 0.5rem;
-  border: 0;
+  border: 1px solid transparent;
   outline: none;
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+}
+.input-field:hover {
+  border: 1px solid orangered;
 }
 
 /* ......................footer section.................... */
@@ -346,6 +354,9 @@ h3 {
 
 /* ✅ Media Queries for Responsive Design */
 @media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 35px;
+  }
   .header-con {
     gap: 2rem;
   }
@@ -355,6 +366,10 @@ h3 {
   .about {
     gap: 2rem;
   }
+  .contact-btn {
+    padding: 0.2rem 0.4rem;
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -363,10 +378,16 @@ h3 {
   .contact-con {
     flex-direction: column;
   }
+  .header-con {
+    gap: 1rem;
+  }
   .nav {
     width: 100%;
+    gap: 0.8rem;
   }
-
+  .hero-con .hero-details {
+    width: 100%;
+  }
   .about {
     gap: 1rem;
   }
@@ -378,6 +399,10 @@ h3 {
   }
   .contact-con .message-con {
     width: 100%;
+  }
+  .contact-btn {
+    padding: 0.1rem 0.3rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -392,22 +417,27 @@ h3 {
     font-size: 16px;
   }
   p {
-    font-size: 12px;
+    font-size: 14px;
   }
   a {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .header-con {
-    width: 90%;
     padding: 0.4rem;
+    gap: 0.5rem;
+  }
+  .hero-con .hero-details {
+    width: 100%;
   }
   .nav {
     flex-direction: column;
     align-items: start;
+    gap: 0.2rem;
   }
   .contact-btn {
-    padding: 0.2rem 0.4rem;
+    padding: 0.1rem 0.2rem;
     font-size: 0.8rem;
+    margin-top: 0.5rem;
   }
 }
