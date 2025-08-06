@@ -225,7 +225,7 @@ p {
 
 /* -------- Services -------- */
 .services {
-  width: 100vw;
+  width: 100%;
 }
 .service-con {
   width: 80%;
