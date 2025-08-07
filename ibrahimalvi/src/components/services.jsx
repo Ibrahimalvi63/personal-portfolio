@@ -12,7 +12,7 @@ function Services() {
         <div className="service">
           {serviceData.map((item) => (
             <div key={item._id} className="service-item">
-              <h3 className="service-title">{item.title}</h3>
+              <h3>{item.title}</h3>
               <p>{item.description}</p>
             </div>
           ))}

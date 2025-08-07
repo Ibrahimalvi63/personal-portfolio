@@ -225,20 +225,22 @@ p {
 
 /* -------- Services -------- */
 .services {
-  width: 100%;
+  width: 100vw;
+  margin: 1rem auto;
+  padding: 1rem;
 }
 .service-con {
-  width: 80%;
   margin: 0 auto;
+  width: 80%;
 }
 .service {
+  margin-top: 2rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 4rem;
-  text-align: center;
-  margin-top: 2rem;
+  gap: 2rem;
+  text-align: left;
 }
-.service .service-item {
+.service-item {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.3);
@@ -247,13 +249,8 @@ p {
   height: auto;
   padding: 10px;
 }
-.service-title {
-  margin-bottom: 2rem;
-}
-
-.service-item p {
-  text-align: left;
-  font-size: 18px;
+.service-item h3 {
+  margin-bottom: 1rem;
 }
 .service-item:hover {
   transform: scale(1.01);
